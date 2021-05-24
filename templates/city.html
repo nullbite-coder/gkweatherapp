@@ -1,0 +1,52 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>City Weather</title>
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+    <link rel="stylesheet" media="screen and (min-width:320px) and (max-width:768px)" href="{% static 'phone.css'%}">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    {% if datas %}
+<style>body{
+        background-image: url("{% static datas.img %}");
+    } </style>
+    <div class="blur2">
+        <h1 class="weather">Weather Report  </h1>
+        <div class="user2" ></div>
+   
+   
+            <header class="user__header">
+
+                
+            </header>
+            <div class="text">
+                
+                <div class="citynm">{{datas.city}}</div>
+                <div class="icon"> 
+                    <img src= "http://openweathermap.org/img/wn/{{datas.icon}}.png" style="height: 90px; width: 90px;">
+                </div>
+                <div class="temp"> {{datas.cel_temp}}° C  </div>
+                <div class="rainf"> {{datas.desc}}  </div>
+                <div class="hp"> Humidity: {{datas.humidity}} &nbsp &nbsp Pressure: {{datas.pressure}}  </div>
+            </div>
+                {%endif%}
+        </div>
+
+         <h1 style="position: relative;top: -150px;color :blanchedalmond;/* left:750px; */font-size:small;font-weight:lighter;/* display: inline; */flex-direction: column;display: flex;/* margin: auto; */text-align: center;">@2021 Weather Report | All Rights Reseved  </h1> 
+    
+    
+</div>
+
+    
+</body>
+</html>

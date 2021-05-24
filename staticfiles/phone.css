@@ -1,0 +1,55 @@
+.weather {
+    /* color: black; */
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'Noto Sans JP', sans-serif;
+    text-align: center;
+    /* margin-top: 100px; */
+    /* object-position: 10px; */
+    display: flex;
+    flex-direction: column;
+    min-height: 21vh;
+    position: relative;
+    top: 70px;
+}
+.user2 {
+    background-color: black;
+    opacity: .4;
+    width: 100%;
+    max-width: 310px;
+    height: 470px;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    /* margin: 24vh auto; */
+    padding: 50px;
+    border-radius: 20px;
+}
+.text {
+    width: 100%;
+    max-width: 380px;
+    margin: auto;
+    position: relative;
+    top: -470px;
+    justify-content: center;
+    align-items: center;
+    /* margin: 24vh auto; */
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.citynm {
+    color: white;
+    font-size: 40px;
+    text-align: center;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+.temp {
+    color: yellow;
+    font-size: 70px;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: bold;
+    text-align: center;
+}
+
