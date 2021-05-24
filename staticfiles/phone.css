@@ -12,6 +12,19 @@
     position: relative;
     top: 70px;
 }
+
+.user {
+    background-color: cornsilk;
+    width: 80%;
+    max-width: 300px;
+    margin: auto;
+    top: 270px;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    border-radius: 20px;
+}
 .user2 {
     background-color: black;
     opacity: .4;

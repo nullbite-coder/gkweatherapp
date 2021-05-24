@@ -38,16 +38,14 @@
 }
 
 .user {
-   background-color: cornsilk;
+    background-color: cornsilk;
     width: 100%;
     max-width: 380px;
     margin: auto;
     top: 270px;
-    left: 650px;
-    position: absolute;
+    position: relative;
     justify-content: center;
     align-items: center;
-    /* margin: 24vh auto; */
     padding: 20px;
     border-radius: 20px;
 }
