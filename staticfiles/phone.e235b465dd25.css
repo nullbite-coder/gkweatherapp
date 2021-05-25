@@ -43,19 +43,6 @@
     margin: 10px 0px;
     color: whitesmoke;
 }
-.copyright {
-    position: relative;
-    top: -70px;
-    color: blanchedalmond;
-    /* left: 750px; */
-    font-size: small;
-    font-weight: lighter;
-    /* display: inline; */
-    flex-direction: column;
-    display: flex;
-    /* margin: auto; */
-    text-align: center;
-}
 .mum ul {
     display: flex;
     flex-direction: column;

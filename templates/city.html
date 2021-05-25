@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>City Weather</title>
+    <link rel="shortcut icon" href="{% static 'favicon.ico' %}"/>
     <link rel="stylesheet" href="{% static 'style.css' %}">
     <link rel="stylesheet" media="screen and (min-width:320px) and (max-width:768px)" href="{% static 'phone.css'%}">
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -16,6 +17,21 @@
 
 </head>
 <body>
+    <nav class="navbar">
+        <div id="logo">
+            <img src="{% static 'favicon.png' %}">
+        </div>
+            <div class="item">GK Weather  
+            </div>
+            <div class="time">
+                <span id="datetime"></span>
+
+                <script>
+                var dt = new Date();
+                document.getElementById("datetime").innerHTML = dt.toLocaleTimeString();
+                </script>
+            </div>
+    </nav>
     {% if datas %}
 <style>body{
         background-image: url("{% static datas.img %}");
@@ -42,7 +58,7 @@
                 {%endif%}
         </div>
 
-         <h1 style="position: relative;top: -150px;color :blanchedalmond;/* left:750px; */font-size:small;font-weight:lighter;/* display: inline; */flex-direction: column;display: flex;/* margin: auto; */text-align: center;">@2021 Weather Report | All Rights Reseved  </h1> 
+         <h1 class="copyright">@2021 GK-Weather | All Rights Reseved  </h1> 
     
     
 </div>

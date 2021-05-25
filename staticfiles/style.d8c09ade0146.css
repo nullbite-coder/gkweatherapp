@@ -55,22 +55,10 @@ body{
 	position: sticky;
 	
 }
-.copyright {
-    position: relative;
-    top: -90px;
-    color: blanchedalmond;
-    /* left: 750px; */
-    font-size: small;
-    font-weight: lighter;
-    /* display: inline; */
-    flex-direction: column;
-    display: flex;
-    /* margin: auto; */
-    text-align: center;
-}
+
 .blur2{
     backdrop-filter: blur(2px);
-    height: 90vh;
+    height: 100vh;
     width: 100%;
 }
 .blur{
@@ -122,18 +110,21 @@ body{
     border-radius: 20px;
 }
 .user2 {
+
     background-color: black;
     opacity: .4;
-    width: 100%;
-    max-width: 440px;
-    height: 500px;
-    margin: auto;
-    justify-content: center;
-    align-items: center;
-    margin: -5vh auto;
-    padding: 50px;
-    border-radius: 20px;
-}
+     width: 100%;
+     max-width: 440px;
+     height: 500px;
+    
+     margin: auto;
+
+     justify-content: center;
+     align-items: center;
+     /* margin: 24vh auto; */
+     padding: 50px;
+     border-radius: 20px;
+ }
  .weather {
     color :black;
     font-size:50px;
@@ -146,18 +137,19 @@ body{
     position: relative;
     top: 20px;
 }
-.text {
+ .text{
     width: 100%;
     max-width: 380px;
     margin: auto;
-    position: relative;
+    position:relative;
     top: -500px;
     justify-content: center;
     align-items: center;
-    margin: 6vh auto;
+    /* margin: 24vh auto; */
     padding: 20px;
     border-radius: 20px;
-}
+
+ }
 .user__header {
     text-align: center;
     /* opacity: 0; */

@@ -1,4 +1,5 @@
 {% load static %}
+{% block content%}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,31 +13,48 @@
     <link rel="stylesheet" href="{% static 'style.css' %}">
     <link rel="stylesheet" media="screen and (min-width:320px) and (max-width:768px)" href="{% static 'phone.css'%}">
 </head>
-<body >
-    <div class="bg-im">
-        <div class="blur">
-            <div class="user" >
-       
-                {% block content %}
-                <header class="user__header">
-        
-                    <h1 class="user__title">Live Weather </h1>
-                </header>
+<body>
+    <nav class="navbar">
+        <div id="logo">
+            <img src="{% static 'favicon.png' %}">
+        </div>
+            <div class="item">GK Weather  
+            </div>
+            <div class="time">
+                <span id="datetime"></span>
+
+                <script>
+                var dt = new Date();
+                document.getElementById("datetime").innerHTML = dt.toLocaleTimeString();
+                </script>
+            </div>
+    </nav>
+    <div class="mum">
+        <ul>
+            <li>
+                {{data.Chennai.city}} &nbsp  &nbsp  <b style="color: yellow;">{{data.Chennai.cel_temp}}° C </b>  
+            </li>
+            <li>
+                {{data.Mumbai.city}} &nbsp  &nbsp  <b style="color: yellow;">{{data.Mumbai.cel_temp}}° C </b> 
+            </li>
+        </ul>
+    </div>
+
+    <h1 class="user__title">Live Weather </h1>
+    <div class="user" >
 
                 <form method = "POST" class="form" style="background-color: white ;">
                     {% csrf_token %}
                     <div class="form__group">
                         <input type="text" placeholder="City" class="form__input" name="city" />
                     </div>
-                    <button class="btn" type="submit">Submit</button>
-                    
-                    
+                    <button class="btn" type="submit">Submit</button>  
                 </form>
-                {%endblock%}
             </div>
         </div>
     </div>
+    <h1 style="position: relative;top: 90px;color :blanchedalmond;/* left:750px; */font-size:small;font-weight:lighter;/* display: inline; */flex-direction: column;display: flex;/* margin: auto; */text-align: center;">@2021 GK-Weather | All Rights Reseved  </h1> 
     
-
+{%endblock%}
 </body>
 </html>

@@ -55,19 +55,7 @@ body{
 	position: sticky;
 	
 }
-.copyright {
-    position: relative;
-    top: -90px;
-    color: blanchedalmond;
-    /* left: 750px; */
-    font-size: small;
-    font-weight: lighter;
-    /* display: inline; */
-    flex-direction: column;
-    display: flex;
-    /* margin: auto; */
-    text-align: center;
-}
+
 .blur2{
     backdrop-filter: blur(2px);
     height: 90vh;

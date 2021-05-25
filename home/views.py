@@ -43,4 +43,27 @@ def home(request):
         return render(request, 'city.html', {'datas':payload})
 
     else:
-        return render(request, 'index.html')   
+
+        chen = f'http://api.openweathermap.org/data/2.5/weather?q=Chennai&appid=89d1672ad9365b31700615d1ffce5aa4'
+        data_chen = requests.get(chen).json()
+
+        mum = f'http://api.openweathermap.org/data/2.5/weather?q=Mumbai&appid=89d1672ad9365b31700615d1ffce5aa4'
+        data_mum = requests.get(mum).json()
+
+        payload = {
+            'Chennai':{
+                'city':data_chen['name'],
+                'weather': data_chen['weather'][0]['main'],
+                'icon': data_chen['weather'][0]['icon'],
+                'cel_temp': int(data_chen['main']['temp'])-273,
+            },
+            'Mumbai':{
+                'city':data_mum['name'],
+                'weather': data_mum['weather'][0]['main'],
+                'icon': data_mum['weather'][0]['icon'],
+                'cel_temp': int(data_mum['main']['temp'])-273,
+            }
+            
+        }
+
+        return render(request, 'index.html', {'data':payload})   

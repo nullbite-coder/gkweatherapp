@@ -7,28 +7,70 @@
     
 
 }
-
-.bg-im{
-    background-image: url(body.jpg) ;
-    width: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-
+body{
     height: 100vh;
+    background-image: linear-gradient(rgb(10, 74, 170),rgb(56, 168, 233));
 }
-.bg-im2{
-    background-image: url(city1.jpg) ;
-    width: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
 
-    height: 100vh;
+.navbar{
+    display:flex;
+	align-items: center;
+    text-align: center;
+	top: 0px;
+    left: 0px;
+	position: sticky;
+	height: 70px;
+    background-color: #0005;
+
+}
+#logo {
+	margin: 10px 18px;
+}
+#logo img {
+	margin: 5px 6px;
+	height: 50px;
+}
+.navbar .item {
+	font-size: 30px;
+	margin: 10px 18px;
+    color: whitesmoke;
+}
+
+.navbar .time {
+    font-size: 15px;
+    margin: 10px 18px;
+    position: absolute;
+    color: whitesmoke;
+    right: 10px;
+}
+
+.navbar ::before {
+	content: "";
+	background: rgba(255, 255, 255,0.9);
+	height: 100%;
+	width: 100%;
+	z-index: -1;
+	left: 0px;
+	top: 0px;
+	position: sticky;
+	
+}
+.copyright {
+    position: relative;
+    top: -90px;
+    color: blanchedalmond;
+    /* left: 750px; */
+    font-size: small;
+    font-weight: lighter;
+    /* display: inline; */
+    flex-direction: column;
+    display: flex;
+    /* margin: auto; */
+    text-align: center;
 }
 .blur2{
     backdrop-filter: blur(2px);
-    height: 100vh;
+    height: 90vh;
     width: 100%;
 }
 .blur{
@@ -37,34 +79,61 @@
     width: 100%;
 }
 
+.mum{
+    height: 70px;
+    width: 45%;
+    color: blanchedalmond;
+    
+    border-radius: 120px;
+    margin: 5vh auto;
+    align-content: center;
+  
+  
+    background:rgba(0, 59, 136, 0.5);
+
+}
+.mum ul {
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+.mum ul li {
+    list-style: none;
+    font-size: 30px;
+    font-family: 'Noto Sans JP', sans-serif;
+   align-items: center;
+   padding: 15px 40px;
+}
 .user {
-    background-color: cornsilk;
+    background: rgba(0, 59, 136, 0.5);
     width: 100%;
     max-width: 380px;
-    margin: auto;
-    top: 270px;
-    position: relative;
+    /* margin: auto; */
+    /* top: 270px; */
+    /* left: 650px; */
+    position: realtive;
     justify-content: center;
     align-items: center;
+    margin: 8vh auto;
     padding: 20px;
     border-radius: 20px;
 }
 .user2 {
-
     background-color: black;
     opacity: .4;
-     width: 100%;
-     max-width: 440px;
-     height: 500px;
-    
-     margin: auto;
-
-     justify-content: center;
-     align-items: center;
-     /* margin: 24vh auto; */
-     padding: 50px;
-     border-radius: 20px;
- }
+    width: 100%;
+    max-width: 440px;
+    height: 500px;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    margin: -5vh auto;
+    padding: 50px;
+    border-radius: 20px;
+}
  .weather {
     color :black;
     font-size:50px;
@@ -75,21 +144,20 @@
     flex-direction: column;
     min-height: 21vh;
     position: relative;
-    top: 70px;
+    top: 20px;
 }
- .text{
+.text {
     width: 100%;
     max-width: 380px;
     margin: auto;
-    position:relative;
+    position: relative;
     top: -500px;
     justify-content: center;
     align-items: center;
-    /* margin: 24vh auto; */
+    margin: 6vh auto;
     padding: 20px;
     border-radius: 20px;
-
- }
+}
 .user__header {
     text-align: center;
     /* opacity: 0; */
@@ -134,8 +202,13 @@
 }
 .user__title {
     margin-bottom: -10px;
-    font-weight: 900;
-    color: black;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: bold;
+    font-size: 60px;
+    color: white;
+    text-shadow: yellow;
+    text-align: center;
+    padding-top: 40px;
 }
 .form__group{
     color: peru;
